@@ -21,6 +21,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+/coverage
 *.lcov
 
 # nyc test coverage
@@ -37,6 +38,7 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
+/build
 
 # Dependency directories
 node_modules/
@@ -78,6 +80,7 @@ web_modules/
 .env.test.local
 .env.production.local
 .env.local
+.env*.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -85,7 +88,9 @@ web_modules/
 
 # Next.js build output
 .next
+/.next/
 out
+/out/
 
 # Nuxt.js build / generate output
 .nuxt
@@ -128,3 +133,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+/.pnp
+.pnp.js
+
+# misc
+.DS_Store
+*.pem
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
