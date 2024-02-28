@@ -1,12 +1,15 @@
 import Image from "next/image";
+import Logo from "./Logo";
 
 export default function Header(props: any) {
-  let logged = false;
+  let logged = true;
 
   if (logged) {
     return (
       <div className="fixed z-[999] flex h-[80px] w-full content-center justify-between bg-white">
-        <p className="text-h1 ml-10 leading-[1.8em]">LOGO</p>
+        <div className="ml-10 mt-2">
+          <Logo />
+        </div>
         <div className="flex h-[40px] w-fit columns-2 self-center">
           <button className="text-h1 w-[40px] rounded-full bg-gray-300 px-2 pt-2 font-light leading-[0.5em] text-gray-400">
             +
@@ -24,7 +27,7 @@ export default function Header(props: any) {
   } else {
     return (
       <div className="fixed z-[999] grid h-[80px] w-full place-items-center bg-white">
-        <p className="text-h1">LOGO</p>
+        <Logo />
       </div>
     );
   }
