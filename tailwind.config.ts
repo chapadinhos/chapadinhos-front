@@ -7,6 +7,15 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontSize: {
+      base: "1rem",
+      h6: "1.25rem",
+      h5: "1.5rem",
+      h4: "2rem",
+      h3: "2.25rem",
+      h2: "2.5rem",
+      h1: "3rem",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
