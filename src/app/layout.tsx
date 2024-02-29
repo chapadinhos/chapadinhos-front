@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { League_Spartan } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import SideMenu from "@/components/SideMenu";
 
 const leagueSpartan = League_Spartan({ subsets: ["latin"] });
 
@@ -18,8 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={leagueSpartan.className}>
-        <Header></Header>
-        {children}
+        <Header />
+        <SideMenu />
+        <div className="h-screen pt-[80px]">{children}</div>
       </body>
     </html>
   );

@@ -1,7 +1,15 @@
+import Button from "@/components/Button";
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <div>
-      <h1 className="container mx-auto flex">Página inicial</h1>
+    <div className="p-6">
+      <Link href="/dashboard">
+        <Button text="Ir para Dashboard 🠒" />
+      </Link>
+      <Link href="/access">
+        <Button text="Login 🠒" />
+      </Link>
     </div>
   );
 }
