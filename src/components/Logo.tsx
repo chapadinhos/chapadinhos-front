@@ -1,7 +1,12 @@
+import Link from "next/link";
 import React from "react";
 
 const Logo = () => {
-  return <p className="text-h1">LOGO</p>;
+  return (
+    <Link href="/" className="text-h1">
+      LOGO
+    </Link>
+  );
 };
 
 export default Logo;
