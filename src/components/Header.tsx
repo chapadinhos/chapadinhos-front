@@ -1,17 +1,27 @@
+"use client";
+
 import Image from "next/image";
 import Logo from "./Logo";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header(props: any) {
-  let logged = true;
+  const [loggedHeaderVisibility, setLoggedHeaderVisibility] = useState(false);
+  const pathname = usePathname();
 
-  if (logged) {
+  useEffect(() => {
+    const list = ["/", "/access", "/access/signup"];
+    setLoggedHeaderVisibility(!list.includes(pathname));
+  }, [pathname]);
+
+  if (loggedHeaderVisibility) {
     return (
       <div className="fixed z-[999] flex h-[80px] w-full content-center justify-between bg-white">
         <div className="ml-10 mt-2">
           <Logo />
         </div>
         <div className="flex h-[40px] w-fit columns-2 self-center">
-          <button className="text-h1 w-[40px] rounded-full bg-gray-300 px-2 pt-2 font-light leading-[0.5em] text-gray-400">
+          <button className="w-[40px] rounded-full bg-gray-300 px-2 pt-2 text-h1 font-light leading-[0.5em] text-gray-400">
             +
           </button>
           <Image
