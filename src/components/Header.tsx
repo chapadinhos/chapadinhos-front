@@ -16,7 +16,7 @@ export default function Header(props: any) {
 
   if (loggedHeaderVisibility) {
     return (
-      <div className="fixed z-[999] flex h-[80px] w-full content-center justify-between bg-white">
+      <div className="flex h-20 items-center justify-between bg-white">
         <div className="ml-10 mt-2">
           <Logo />
         </div>

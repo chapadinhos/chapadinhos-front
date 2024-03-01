@@ -18,10 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={leagueSpartan.className}>
+      <body className={`${leagueSpartan.className} h-screen`}>
+        <div className="grid grid-rows-[80px_1fr]">
         <Header />
-        <SideMenu />
-        <div className="h-screen pt-[80px]">{children}</div>
+        <div className="grid grid-cols-[80px_1fr]">
+          <SideMenu />
+          <div className="h-screen">{children}</div>
+        </div>
+        </div>
       </body>
     </html>
   );
