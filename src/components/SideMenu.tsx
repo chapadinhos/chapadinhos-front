@@ -16,8 +16,8 @@ const SideMenu = (props: any) => {
   function renderizaSideMenu() {
     if (sideMenuVisibility) {
       return (
-        <div className="fixed z-[998] h-screen w-[75px] flex-row">
-          <div className="flex h-full flex-col bg-black">
+        <div className="fixed z-[998] h-screen w-[75px] bg-black">
+          <div className="flex h-screen flex-col pt-[80px]">
             <Link
               href="/dashboard"
               className="grid h-[75px] place-content-center text-gray-50 hover:bg-gray-800"

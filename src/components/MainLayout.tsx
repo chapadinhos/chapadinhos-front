@@ -15,10 +15,10 @@ const MainLayout = (props: any) => {
   }, [pathname]);
 
   return (
-    <main className="pt-[80px]">
+    <main>
       <SideMenu />
       <div
-        className={clsx("h-screen", {
+        className={clsx("h-screen pt-[80px]", {
           "pl-[80px]": loggedState,
         })}
       >
