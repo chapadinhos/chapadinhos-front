@@ -16,7 +16,7 @@ const SideMenu = (props: any) => {
   function renderizaSideMenu() {
     if (sideMenuVisibility) {
       return (
-        <div className="fixed h-screen flex-row pt-[80px]">
+        <div className="fixed z-[998] h-screen flex-row pt-[80px]">
           <div className="h-full w-[75px] flex-none">
             <div className="flex h-full flex-col bg-black">
               <Link
