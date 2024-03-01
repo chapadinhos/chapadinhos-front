@@ -4,19 +4,19 @@ import Image from "next/image";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import validatePathName from "@/helpers/validatePathname";
 
 export default function Header(props: any) {
   const [loggedHeaderVisibility, setLoggedHeaderVisibility] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    const list = ["/", "/access", "/access/signup"];
-    setLoggedHeaderVisibility(!list.includes(pathname));
+    setLoggedHeaderVisibility(validatePathName(pathname));
   }, [pathname]);
 
   if (loggedHeaderVisibility) {
     return (
-      <div className="flex h-20 items-center justify-between bg-white">
+      <div className="fixed z-[999] flex h-[80px] w-full content-center justify-between bg-white">
         <div className="ml-10 mt-2">
           <Logo />
         </div>
