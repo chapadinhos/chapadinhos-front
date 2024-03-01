@@ -15,23 +15,18 @@ export default function Page() {
 
       <div className="w-full">
         <h4 className="text-h4 font-bold">Desafios ativos</h4>
-        <div className="grid gap-2 grid-cols-auto-fit-200">
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
-            <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+        <div className="grid-cols-auto-fit-200 grid gap-y-6">
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
+          <div className="h-[200px] w-[200px] rounded-[20px] bg-white drop-shadow-md"></div>
         </div>
       </div>
     </div>
